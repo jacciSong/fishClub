@@ -1,0 +1,5 @@
+[ 2020-04-26T10:20:48+08:00 ] 127.0.0.1 /fishClub/index.php/Home/OrderDetail/favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.013271s ]
+

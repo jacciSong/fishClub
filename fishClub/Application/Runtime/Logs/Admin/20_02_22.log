@@ -1,0 +1,761 @@
+[ 2020-02-22T21:29:32+08:00 ] 127.0.0.1 /fishClub/index.php/Admin/WareManage/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000157s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000599s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000656s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000121s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000150s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008600s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008648s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000137s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000154s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000350s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000374s ]
+
+[ 2020-02-22T21:29:32+08:00 ] 127.0.0.1 /fishClub/index.php/Admin/WareManage/WareDatatable?page=1&limit=5
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000219s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000192s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000222s ]
+NOTIC: [8] Undefined index: key /Applications/XAMPP/xamppfiles/htdocs/fishClub/Application/Admin/Controller/WareManageController.class.php 第 13 行.
+NOTIC: [8] Undefined index: key /Applications/XAMPP/xamppfiles/htdocs/fishClub/Application/Admin/Controller/WareManageController.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `ware_base_info` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `ware_base_info` WHERE `status` = 'normal' LIMIT 0,5   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `ware_base_info` WHERE `status` = 'normal'  [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000350s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000375s ]
+
+[ 2020-02-22T22:07:23+08:00 ] 127.0.0.1 /fishClub/index.php/Admin/WareManage/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000181s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000232s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000255s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000132s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000163s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006052s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006071s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000117s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000130s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000386s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000410s ]
+
+[ 2020-02-22T22:07:23+08:00 ] 127.0.0.1 /fishClub/index.php/Admin/WareManage/WareDatatable?page=1&limit=5
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000217s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000184s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000198s ]
+NOTIC: [8] Undefined index: key /Applications/XAMPP/xamppfiles/htdocs/fishClub/Application/Admin/Controller/WareManageController.class.php 第 13 行.
+NOTIC: [8] Undefined index: key /Applications/XAMPP/xamppfiles/htdocs/fishClub/Application/Admin/Controller/WareManageController.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `ware_base_info` [ RunTime:0.0015s ]
+SQL: SELECT * FROM `ware_base_info` WHERE `status` = 'normal' LIMIT 0,5   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `ware_base_info` WHERE `status` = 'normal'  [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000350s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000370s ]
+
+[ 2020-02-22T22:59:49+08:00 ] 127.0.0.1 /fishClub/index.php/Admin/Main/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000175s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000216s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000234s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000069s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000089s ]
+NOTIC: [8] Undefined variable: identity /Applications/XAMPP/xamppfiles/htdocs/fishClub/Application/Runtime/Cache/Admin/ceb25a752d454a3315706634952427db.php 第 86 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004120s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004136s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000096s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000107s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000233s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000245s ]
+
+[ 2020-02-22T22:59:49+08:00 ] 127.0.0.1 /fishClub/index.php/Admin/Main/welcome
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000139s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000171s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000186s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000015s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000037s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002390s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002404s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000082s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000091s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000202s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000213s ]
+
+[ 2020-02-22T22:59:51+08:00 ] 127.0.0.1 /fishClub/index.php/Admin/WareManage/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000177s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000203s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000221s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000091s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000115s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012412s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012456s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000173s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000194s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000390s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000415s ]
+
+[ 2020-02-22T22:59:51+08:00 ] 127.0.0.1 /fishClub/index.php/Admin/WareManage/WareDatatable?page=1&limit=5
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000173s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000230s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000262s ]
+NOTIC: [8] Undefined index: key /Applications/XAMPP/xamppfiles/htdocs/fishClub/Application/Admin/Controller/WareManageController.class.php 第 13 行.
+NOTIC: [8] Undefined index: key /Applications/XAMPP/xamppfiles/htdocs/fishClub/Application/Admin/Controller/WareManageController.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `ware_base_info` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `ware_base_info` WHERE `status` = 'normal' LIMIT 0,5   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `ware_base_info` WHERE `status` = 'normal'  [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000223s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000238s ]
+
+[ 2020-02-22T22:59:53+08:00 ] 127.0.0.1 /fishClub/index.php/Admin/DiscountManage/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000159s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000193s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000211s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000087s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000109s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006588s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006622s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000119s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000133s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000275s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000291s ]
+
+[ 2020-02-22T22:59:53+08:00 ] 127.0.0.1 /fishClub/index.php/Admin/DiscountManage/DiscountDatatable?page=1&limit=10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000145s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000196s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000212s ]
+NOTIC: [8] Undefined index: key /Applications/XAMPP/xamppfiles/htdocs/fishClub/Application/Admin/Controller/DiscountManageController.class.php 第 13 行.
+NOTIC: [8] Undefined index: key /Applications/XAMPP/xamppfiles/htdocs/fishClub/Application/Admin/Controller/DiscountManageController.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `discount_base_info` [ RunTime:0.0021s ]
+SQL: SELECT * FROM `discount_base_info` WHERE `status` = 'normal' LIMIT 0,10   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `discount_base_info` WHERE `status` = 'normal'  [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000266s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000280s ]
+
+[ 2020-02-22T22:59:55+08:00 ] 127.0.0.1 /fishClub/index.php/Admin/WareManage/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000160s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000200s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000218s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000091s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000109s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003198s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003216s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000191s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000209s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000269s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000288s ]
+
+[ 2020-02-22T22:59:55+08:00 ] 127.0.0.1 /fishClub/index.php/Admin/WareManage/WareDatatable?page=1&limit=5
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000470s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000316s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000344s ]
+NOTIC: [8] Undefined index: key /Applications/XAMPP/xamppfiles/htdocs/fishClub/Application/Admin/Controller/WareManageController.class.php 第 13 行.
+NOTIC: [8] Undefined index: key /Applications/XAMPP/xamppfiles/htdocs/fishClub/Application/Admin/Controller/WareManageController.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `ware_base_info` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `ware_base_info` WHERE `status` = 'normal' LIMIT 0,5   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `ware_base_info` WHERE `status` = 'normal'  [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000295s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000311s ]
+
+[ 2020-02-22T22:59:57+08:00 ] 127.0.0.1 /fishClub/index.php/Admin/DiscountManage/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000160s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000199s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000217s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000079s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000098s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003167s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003185s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000086s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000097s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000225s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000240s ]
+
+[ 2020-02-22T22:59:57+08:00 ] 127.0.0.1 /fishClub/index.php/Admin/DiscountManage/DiscountDatatable?page=1&limit=10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000156s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000172s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000187s ]
+NOTIC: [8] Undefined index: key /Applications/XAMPP/xamppfiles/htdocs/fishClub/Application/Admin/Controller/DiscountManageController.class.php 第 13 行.
+NOTIC: [8] Undefined index: key /Applications/XAMPP/xamppfiles/htdocs/fishClub/Application/Admin/Controller/DiscountManageController.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `discount_base_info` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `discount_base_info` WHERE `status` = 'normal' LIMIT 0,10   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `discount_base_info` WHERE `status` = 'normal'  [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000249s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000263s ]
+
+[ 2020-02-22T23:00:02+08:00 ] 127.0.0.1 /fishClub/index.php/Admin/DiscountManage/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000211s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000232s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000251s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000077s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000098s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003207s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003224s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000094s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000105s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000236s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000255s ]
+
+[ 2020-02-22T23:00:02+08:00 ] 127.0.0.1 /fishClub/index.php/Admin/DiscountManage/DiscountDatatable?page=1&limit=10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000177s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000214s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000231s ]
+NOTIC: [8] Undefined index: key /Applications/XAMPP/xamppfiles/htdocs/fishClub/Application/Admin/Controller/DiscountManageController.class.php 第 13 行.
+NOTIC: [8] Undefined index: key /Applications/XAMPP/xamppfiles/htdocs/fishClub/Application/Admin/Controller/DiscountManageController.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `discount_base_info` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `discount_base_info` WHERE `status` = 'normal' LIMIT 0,10   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `discount_base_info` WHERE `status` = 'normal'  [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000321s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000345s ]
+
+[ 2020-02-22T23:00:09+08:00 ] 127.0.0.1 /fishClub/index.php/Admin/WareManage/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000163s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000200s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000218s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000089s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000107s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003570s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003595s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000101s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000114s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000252s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000266s ]
+
+[ 2020-02-22T23:00:09+08:00 ] 127.0.0.1 /fishClub/index.php/Admin/WareManage/WareDatatable?page=1&limit=5
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000169s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000214s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000230s ]
+NOTIC: [8] Undefined index: key /Applications/XAMPP/xamppfiles/htdocs/fishClub/Application/Admin/Controller/WareManageController.class.php 第 13 行.
+NOTIC: [8] Undefined index: key /Applications/XAMPP/xamppfiles/htdocs/fishClub/Application/Admin/Controller/WareManageController.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `ware_base_info` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `ware_base_info` WHERE `status` = 'normal' LIMIT 0,5   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `ware_base_info` WHERE `status` = 'normal'  [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000239s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000253s ]
+
+[ 2020-02-22T23:00:10+08:00 ] 127.0.0.1 /fishClub/index.php/Admin/DiscountManage/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000184s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000209s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000228s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000094s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000132s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003421s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003438s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000086s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000097s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000355s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000374s ]
+
+[ 2020-02-22T23:00:10+08:00 ] 127.0.0.1 /fishClub/index.php/Admin/DiscountManage/DiscountDatatable?page=1&limit=10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000292s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000205s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000223s ]
+NOTIC: [8] Undefined index: key /Applications/XAMPP/xamppfiles/htdocs/fishClub/Application/Admin/Controller/DiscountManageController.class.php 第 13 行.
+NOTIC: [8] Undefined index: key /Applications/XAMPP/xamppfiles/htdocs/fishClub/Application/Admin/Controller/DiscountManageController.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `discount_base_info` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `discount_base_info` WHERE `status` = 'normal' LIMIT 0,10   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `discount_base_info` WHERE `status` = 'normal'  [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000319s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000339s ]
+
+[ 2020-02-22T23:00:13+08:00 ] 127.0.0.1 /fishClub/index.php/Admin/WareManage/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000175s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000218s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000237s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000094s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000115s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003296s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003314s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000081s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000092s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000226s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000241s ]
+
+[ 2020-02-22T23:00:13+08:00 ] 127.0.0.1 /fishClub/index.php/Admin/WareManage/WareDatatable?page=1&limit=5
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000143s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000178s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000193s ]
+NOTIC: [8] Undefined index: key /Applications/XAMPP/xamppfiles/htdocs/fishClub/Application/Admin/Controller/WareManageController.class.php 第 13 行.
+NOTIC: [8] Undefined index: key /Applications/XAMPP/xamppfiles/htdocs/fishClub/Application/Admin/Controller/WareManageController.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `ware_base_info` [ RunTime:0.0017s ]
+SQL: SELECT * FROM `ware_base_info` WHERE `status` = 'normal' LIMIT 0,5   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `ware_base_info` WHERE `status` = 'normal'  [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000303s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000322s ]
+
+[ 2020-02-22T23:00:14+08:00 ] 127.0.0.1 /fishClub/index.php/Admin/DiscountManage/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000203s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000216s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000235s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000079s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000101s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003609s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003631s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000098s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000112s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000504s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000559s ]
+
+[ 2020-02-22T23:00:14+08:00 ] 127.0.0.1 /fishClub/index.php/Admin/DiscountManage/DiscountDatatable?page=1&limit=10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000176s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000187s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000203s ]
+NOTIC: [8] Undefined index: key /Applications/XAMPP/xamppfiles/htdocs/fishClub/Application/Admin/Controller/DiscountManageController.class.php 第 13 行.
+NOTIC: [8] Undefined index: key /Applications/XAMPP/xamppfiles/htdocs/fishClub/Application/Admin/Controller/DiscountManageController.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `discount_base_info` [ RunTime:0.0016s ]
+SQL: SELECT * FROM `discount_base_info` WHERE `status` = 'normal' LIMIT 0,10   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `discount_base_info` WHERE `status` = 'normal'  [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000281s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000297s ]
+
+[ 2020-02-22T23:00:17+08:00 ] 127.0.0.1 /fishClub/index.php/Admin/WareManage/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000155s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000193s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000210s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000090s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000110s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003227s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003250s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000113s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000130s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000327s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000350s ]
+
+[ 2020-02-22T23:00:17+08:00 ] 127.0.0.1 /fishClub/index.php/Admin/WareManage/WareDatatable?page=1&limit=5
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000189s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000294s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000320s ]
+NOTIC: [8] Undefined index: key /Applications/XAMPP/xamppfiles/htdocs/fishClub/Application/Admin/Controller/WareManageController.class.php 第 13 行.
+NOTIC: [8] Undefined index: key /Applications/XAMPP/xamppfiles/htdocs/fishClub/Application/Admin/Controller/WareManageController.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `ware_base_info` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `ware_base_info` WHERE `status` = 'normal' LIMIT 0,5   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `ware_base_info` WHERE `status` = 'normal'  [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000274s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000289s ]
+
+[ 2020-02-22T23:00:18+08:00 ] 127.0.0.1 /fishClub/index.php/Admin/DiscountManage/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000158s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000198s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000216s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000078s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000098s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003395s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003411s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000083s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000094s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000332s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000349s ]
+
+[ 2020-02-22T23:00:18+08:00 ] 127.0.0.1 /fishClub/index.php/Admin/DiscountManage/DiscountDatatable?page=1&limit=10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000145s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000175s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000189s ]
+NOTIC: [8] Undefined index: key /Applications/XAMPP/xamppfiles/htdocs/fishClub/Application/Admin/Controller/DiscountManageController.class.php 第 13 行.
+NOTIC: [8] Undefined index: key /Applications/XAMPP/xamppfiles/htdocs/fishClub/Application/Admin/Controller/DiscountManageController.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `discount_base_info` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `discount_base_info` WHERE `status` = 'normal' LIMIT 0,10   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `discount_base_info` WHERE `status` = 'normal'  [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000236s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000250s ]
+
+[ 2020-02-22T23:00:26+08:00 ] 127.0.0.1 /fishClub/index.php/Admin/DiscountManage/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000187s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000194s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000211s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000080s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000103s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003283s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003300s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000089s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000100s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000280s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000298s ]
+
+[ 2020-02-22T23:00:26+08:00 ] 127.0.0.1 /fishClub/index.php/Admin/DiscountManage/DiscountDatatable?page=1&limit=10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000150s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000225s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000245s ]
+NOTIC: [8] Undefined index: key /Applications/XAMPP/xamppfiles/htdocs/fishClub/Application/Admin/Controller/DiscountManageController.class.php 第 13 行.
+NOTIC: [8] Undefined index: key /Applications/XAMPP/xamppfiles/htdocs/fishClub/Application/Admin/Controller/DiscountManageController.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `discount_base_info` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `discount_base_info` WHERE `status` = 'normal' LIMIT 0,10   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `discount_base_info` WHERE `status` = 'normal'  [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000379s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000397s ]
+
+[ 2020-02-22T23:00:29+08:00 ] 127.0.0.1 /fishClub/index.php/Admin/DiscountManage/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000171s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000216s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000235s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000078s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000098s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003148s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003166s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000081s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000092s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000315s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000335s ]
+
+[ 2020-02-22T23:00:29+08:00 ] 127.0.0.1 /fishClub/index.php/Admin/DiscountManage/DiscountDatatable?page=1&limit=10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000141s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000193s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000209s ]
+NOTIC: [8] Undefined index: key /Applications/XAMPP/xamppfiles/htdocs/fishClub/Application/Admin/Controller/DiscountManageController.class.php 第 13 行.
+NOTIC: [8] Undefined index: key /Applications/XAMPP/xamppfiles/htdocs/fishClub/Application/Admin/Controller/DiscountManageController.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `discount_base_info` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `discount_base_info` WHERE `status` = 'normal' LIMIT 0,10   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `discount_base_info` WHERE `status` = 'normal'  [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000257s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000272s ]
+
+[ 2020-02-22T23:00:30+08:00 ] 127.0.0.1 /fishClub/index.php/Admin/WareManage/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000159s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000198s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000216s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000089s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000107s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003271s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003288s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000079s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000090s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000292s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000309s ]
+
+[ 2020-02-22T23:00:30+08:00 ] 127.0.0.1 /fishClub/index.php/Admin/WareManage/WareDatatable?page=1&limit=5
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000188s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000212s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000229s ]
+NOTIC: [8] Undefined index: key /Applications/XAMPP/xamppfiles/htdocs/fishClub/Application/Admin/Controller/WareManageController.class.php 第 13 行.
+NOTIC: [8] Undefined index: key /Applications/XAMPP/xamppfiles/htdocs/fishClub/Application/Admin/Controller/WareManageController.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `ware_base_info` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `ware_base_info` WHERE `status` = 'normal' LIMIT 0,5   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `ware_base_info` WHERE `status` = 'normal'  [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000255s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000272s ]
+
+[ 2020-02-22T23:00:36+08:00 ] 127.0.0.1 /fishClub/index.php/Admin/DiscountManage/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000163s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000199s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000230s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000105s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000132s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003341s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003359s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000087s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000099s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000237s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000254s ]
+
+[ 2020-02-22T23:00:36+08:00 ] 127.0.0.1 /fishClub/index.php/Admin/DiscountManage/DiscountDatatable?page=1&limit=10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000178s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000185s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000200s ]
+NOTIC: [8] Undefined index: key /Applications/XAMPP/xamppfiles/htdocs/fishClub/Application/Admin/Controller/DiscountManageController.class.php 第 13 行.
+NOTIC: [8] Undefined index: key /Applications/XAMPP/xamppfiles/htdocs/fishClub/Application/Admin/Controller/DiscountManageController.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `discount_base_info` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `discount_base_info` WHERE `status` = 'normal' LIMIT 0,10   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `discount_base_info` WHERE `status` = 'normal'  [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000252s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000267s ]
+
+[ 2020-02-22T23:06:16+08:00 ] 127.0.0.1 /fishClub/index.php/Admin/WareManage/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000168s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000275s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000302s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000094s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000118s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005005s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005028s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000100s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000112s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000279s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000295s ]
+
+[ 2020-02-22T23:06:16+08:00 ] 127.0.0.1 /fishClub/index.php/Admin/WareManage/WareDatatable?page=1&limit=5
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000150s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000198s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000215s ]
+NOTIC: [8] Undefined index: key /Applications/XAMPP/xamppfiles/htdocs/fishClub/Application/Admin/Controller/WareManageController.class.php 第 13 行.
+NOTIC: [8] Undefined index: key /Applications/XAMPP/xamppfiles/htdocs/fishClub/Application/Admin/Controller/WareManageController.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `ware_base_info` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `ware_base_info` WHERE `status` = 'normal' LIMIT 0,5   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `ware_base_info` WHERE `status` = 'normal'  [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000238s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000252s ]
+
+[ 2020-02-22T23:06:20+08:00 ] 127.0.0.1 /fishClub/index.php/Admin/DiscountManage/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000176s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000262s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000294s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000077s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000096s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003582s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003633s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000139s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000159s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000244s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000260s ]
+
+[ 2020-02-22T23:06:20+08:00 ] 127.0.0.1 /fishClub/index.php/Admin/DiscountManage/DiscountDatatable?page=1&limit=10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000193s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000175s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000188s ]
+NOTIC: [8] Undefined index: key /Applications/XAMPP/xamppfiles/htdocs/fishClub/Application/Admin/Controller/DiscountManageController.class.php 第 13 行.
+NOTIC: [8] Undefined index: key /Applications/XAMPP/xamppfiles/htdocs/fishClub/Application/Admin/Controller/DiscountManageController.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `discount_base_info` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `discount_base_info` WHERE `status` = 'normal' LIMIT 0,10   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `discount_base_info` WHERE `status` = 'normal'  [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000225s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000240s ]
+
+[ 2020-02-22T23:06:21+08:00 ] 127.0.0.1 /fishClub/index.php/Admin/WareManage/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000161s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000201s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000219s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000102s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000118s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003183s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003199s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000078s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000089s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000320s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000341s ]
+
+[ 2020-02-22T23:06:21+08:00 ] 127.0.0.1 /fishClub/index.php/Admin/WareManage/WareDatatable?page=1&limit=5
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000146s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000194s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000210s ]
+NOTIC: [8] Undefined index: key /Applications/XAMPP/xamppfiles/htdocs/fishClub/Application/Admin/Controller/WareManageController.class.php 第 13 行.
+NOTIC: [8] Undefined index: key /Applications/XAMPP/xamppfiles/htdocs/fishClub/Application/Admin/Controller/WareManageController.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `ware_base_info` [ RunTime:0.0015s ]
+SQL: SELECT * FROM `ware_base_info` WHERE `status` = 'normal' LIMIT 0,5   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `ware_base_info` WHERE `status` = 'normal'  [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000254s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000269s ]
+

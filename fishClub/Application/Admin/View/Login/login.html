@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>FCMS</title>
+		<include file="Layout:ins_css" />
+		<link rel="stylesheet" type="text/css" href="__CSS__/home/login.css" />
+		<link rel="shortcut icon" href="__PUBLIC__/img/logo.png">
+		<style type="text/css">
+			a:hover {
+				color: #FFFFFF;
+			}
+		</style>
+	</head>
+
+	<body>
+
+		<div class="top-div">
+			<div class="text">
+				Fish Club Management System
+			</div>
+		</div>
+		<div class="content">
+			<div class="login-div">
+				<div class="user-login-text">
+					Fish Club 
+				</div>
+				<div class="input-div">
+					<input type="text" name="account" class="input account" placeholder="Account" value="{$user.account}" />
+					<input type="password" name="pwd" class="input pwd" placeholder="Password" />
+					<a class="login-btn" onclick="checkLogin()">
+						LOGIN
+					</a>
+				</div>
+			</div>
+		</div>
+
+		<include file="Layout:ins_js" />
+
+		<script type="text/javascript" src="__JS__/common.js"></script>
+		<script>
+			if(window != top)
+				top.location.href = location.href;
+			$(document).ready(function() {
+				setRootFontSize();
+				$("body").keydown(function() {
+					if(event.keyCode == "13") { //keyCode=13是回车键
+						checkLogin();
+					}
+				});
+			})
+
+			function checkLogin() {
+				var account = $('.account').val();
+				if(account == '' || account == null) {
+					toastr.warning('Please enter your account !');
+					return;
+				}
+				var pwd = $('.pwd').val();
+				if(pwd == '' || pwd == null) {
+					toastr.warning('Please enter your password !');
+					return;
+				}
+				$.ajax({
+					type: "post",
+					url: "__URL__/loginCheck",
+					async: true,
+					data: {
+						account: account,
+						pwd: pwd
+					},
+					dataType: 'json',
+					success: function(data) {
+						if(data.state) {
+							window.location.href = "__MODULE__/Main/index.html";
+						} else {
+							toastr.warning(data.info);
+						}
+					}
+				});
+			}
+		</script>
+	</body>
+
+</html>

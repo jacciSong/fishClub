@@ -1,0 +1,51 @@
+#zh-div-row-oral {
+	padding: 2rem 5rem;
+}
+
+#zh-div-row-oral .row .col-xs-1 img {
+	border-radius: 50%;
+}
+
+#zh-div-row-oral .row .col-xs-11 .col-xs-8 .row {
+	font-size: 16px;
+	font-weight: 600;
+	padding: 1.2rem 0.5rem;
+}
+
+#zh-div-row-oral .row .col-xs-11 .col-xs-4 .row {
+	font-size: 14px;
+}
+
+#zh-div-p {
+	padding: 0.5rem 1rem;
+	border: 1px solid #E5E5E5;
+	margin-top: 1.3rem;
+	border-radius: 5px;
+	background-color: #E5E5E5;
+	min-height: 100px;
+}
+
+#zh-div-oral-row {
+	margin-top: 1.3rem;
+}
+
+#zh-div-oral-row label {
+	font-size: 15px;
+	margin-bottom: 1rem;
+}
+
+#zh-div-hend {
+	display: none;
+}
+
+#zh-div-hend textarea {
+	width: 100%;
+}
+
+#zh-div-inp {
+	margin-top: 1.3rem;
+}
+
+#zh-div-tijiao {
+	display: none;
+}

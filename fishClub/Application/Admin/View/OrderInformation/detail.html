@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>Order detail</title>
+		<include file='Layout:ins_css' />
+		<style>
+			.container {
+				display: flex;
+				justify-content: center;
+				flex-direction: column;
+				width: 100%;
+			}
+			
+			.addressCon {
+				background-color: white;
+				height: 70px;
+				width: 100%;
+				display: flex;
+				flex-direction: row;
+				align-items: center;
+				border-radius: 8px;
+				padding: 10px 0px;
+			}
+			
+			.wareCon {
+				margin-top: 20px;
+				background-color: white;
+				padding: 10px 0;
+				border-radius: 8px;
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				width: 100%;
+			}
+			
+			.orderCon {
+				margin-top: 20px;
+				background-color: white;
+				height: 80px;
+				border-radius: 8px;
+				padding: 10px 0;
+			}
+			
+			.container1 {
+				background-color: rgb(242, 242, 242);
+			}
+			
+			.rightCon {
+				margin-left: 20px;
+				height: 38px;
+				display: flex;
+				flex-direction: column;
+				justify-content: space-between;
+			}
+			
+			.topCon {
+				margin-left: 10px;
+				display: flex;
+				flex-direction: row;
+				width: 100%;
+				height: 65px;
+				align-items: center;
+			}
+			
+			.rtCon {
+				margin-left: 10px;
+				display: flex;
+				flex-direction: column;
+				margin-right: 10px;
+			}
+			
+			.belowCon {
+				display: flex;
+				flex-direction: column;
+				width: 100%;
+				border-bottom: 1px solid rgb(242, 242, 242);
+			}
+			
+			.item {
+				height: 26px;
+				padding: 0 10px;
+				display: flex;
+				flex-direction: row;
+				width: 96%;
+				justify-content: space-between;
+				align-items: center;
+				/*align-content: space-between;*/
+			}
+			
+			.redFont {
+				margin-left: 6px;
+				color: red;
+				font-size: 16px;
+			}
+			-webkit-scrollbar {
+				display: none;
+			}
+			#parent {
+				overflow-x: hidden;
+				overflow-y: scroll;
+			}
+			
+			::-webkit-scrollbar {
+				display: none;
+			}
+		</style>
+	</head>
+
+	<body class="container1" id="parent">
+		<div class="wrapper wrapper-content animated fadeInRight" style="overflow-y: scroll;">
+			<div class="container">
+				<div class="addressCon">
+					<img src="__IMG__/Admin/Adress.png" height="50px" width="50px" style="margin-left: 10px;" />
+					<div class="rightCon">
+						<div>
+							<span>{$data.name}</span>
+							<span style="margin-left:4px;"> {$data.phone}</span>
+							<span style="margin-left:4px;"> {$data.email}</span>
+						</div>
+						<span>{$data.address_str}</span>
+					</div>
+				</div>
+				<div class="wareCon">
+					<volist name="data.ware_info" id="vo">
+						<div class="topCon">
+							<img src="__ROOT__/Uploads/{$vo.picture}" width="90px" />
+							<div class="rtCon">
+								<span>{$vo.name}</span>
+								<div style="margin-top: 8px;">
+									<span>${$vo.price}</span>
+									<span class="redFont">x{$vo.count}</span>
+								</div>
+							</div>
+						</div>
+					</volist>
+
+					<div class="belowCon">
+						<div class="item">
+							<span>SubTotal</span>
+							<span>{$data.ware_total}</span>
+						</div>
+						<div class="item">
+							<span>Shipping</span>
+							<span>Free</span>
+						</div>
+						<div class="item">
+							<span>Discount</span>
+							<span>-{$data.discount}</span>
+						</div>
+					</div>
+					<div class="item" style="margin-top: 6px;">
+						<if condition="$data.flag eq 1 "><span>Need pay</span>
+							<else /> <span>Real pay</span>
+						</if>
+						
+						<span>${$data.real_pay}</span>
+					</div>
+				</div>
+				<div class="orderCon">
+					<div class="belowCon" style="border: none;">
+						<div class="item">
+							<span>Order number</span>
+							<span>{$data.order_number}</span>
+						</div>
+						<div class="item">
+							<span>Create time </span>
+							<span>{$data.time}</span>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+		<include file="Layout:ins_js" />
+		<script type="text/javascript">
+			window.addEventListener('load', function() {
+				reTime();
+			})
+
+			function reTime() {
+				var ti = $("#time").val();
+				var date1 = $("#date").val();
+				console.log(ti);
+				if(ti == 1)
+					document.getElementById("db_time").innerText = "答辩时间：" + date1 + " 上午";
+				else
+					document.getElementById("db_time").innerText = "答辩时间：" + date1 + " 下午";
+			}
+		</script>
+	</body>
+
+</html>

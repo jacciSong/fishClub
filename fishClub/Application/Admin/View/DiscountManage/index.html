@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<title>Discount Management</title>
+		<include file='Layout:ins_css' />
+		<link rel="stylesheet" href="__VENDOR__/layui/css/layui.css" media="all">
+		<!-- 注意：如果你直接复制所有代码到本地，上述css路径需要改成你本地的 -->
+		<style>
+			.blank {
+				margin-left: 20px;
+				height: 55px;
+				line-height: 55px;
+			}
+			
+			.layui-table img {
+				width: 70px;
+				height: 70px;
+			}
+			
+			.layui-table-cell {
+				height: auto;
+				white-space: normal;
+			}
+			
+			body {
+				overflow-y: scroll;
+			}
+			
+			.layui-table-cell {
+				height: auto;
+				white-space: normal;
+			}
+			
+			.homeimg {
+				margin-left: .2rem;
+				width: 10rem;
+				height: 30px;
+				line-height: 30px;
+				margin: 0 !important;
+			}
+			
+			.newsimg {
+				width: 10rem;
+				height: 30px;
+				line-height: 30px;
+				margin: 0 !important;
+			}
+			
+			.newsimg1 {
+				height: 30px;
+				line-height: 30px;
+				margin: 0 !important;
+			}
+			
+			#export {
+				margin: -36px 20px;
+				float: right;
+			}
+			
+			.blank {
+				margin-left: 20px;
+				height: 45px;
+				line-height: 45px;
+			}
+			
+			.layui-inline {
+				margin: 0 10px 0px 0px;
+			}
+			
+			.blank5 {
+				margin: 10px 0px 15px 19px;
+				display: flex;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="wrapper wrapper-content animated fadeInRight">
+			<div class="row">
+				<div class="col-sm-12">
+					<div class="ibox float-e-margins">
+						<div class="ibox-title">
+							<h4>Discount Management</h4>
+							<button class="layui-btn layui-btn-sm" onclick="addNewDiscount();" id="addBtn">Add</button>
+						</div>
+						<div class="ibox-content">
+							<table class="layui-table" lay-data="{url:'__URL__/DiscountDatatable',  page:true, id:'idTest', limit:10}" lay-filter="demo">
+								<thead>
+									<tr>
+										<th lay-data="{field:'code', align:'center'}">Code</th>
+										<th lay-data="{field:'ratio', align:'center'}">Discount</th>
+										<th lay-data="{align:'center', templet:'#barDemo'}">Operate</th>
+									</tr>
+								</thead>
+							</table>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--<script type="text/html" id="barDemo2">
+			<a class="layui-btn layui-btn-xs" lay-event="detailCo">详情</a>
+		</script>-->
+		
+		<script type="text/html" id="barDemo">
+			<a class="layui-btn layui-btn-xs" lay-event="edit">Edit</a>
+			<a class="layui-btn layui-btn-xs layui-btn-danger" lay-event="del">Delete</a>
+		</script>
+		<include file='Layout:ins_js' />
+		<script src="__VENDOR__/layui/layui.js" charset="utf-8"></script>
+		<!-- 注意：如果你直接复制所有代码到本地，上述js路径需要改成你本地的 -->
+		<script type="text/javascript">
+			layui.use('table', function() {
+				var table = layui.table;
+				//类型功能
+				var $ = layui.$,
+					active = {
+						reload: function() {
+							var types = $('#types');
+							//执行重载
+							table.reload('idTest', {
+								page: {
+									curr: 1 //重新从第 1 页开始
+								},
+								where: {
+									key: {
+										lid: types.val()
+									}
+								}
+							});
+						}
+					};
+				//监听工具条
+				table.on('tool(demo)', function(obj) {
+					var data = obj.data;
+					if(obj.event === 'edit') {
+						var code = data.code;
+//						var lid = data.lid;
+						layer.open({
+							type: 2,
+							title: 'Edit the discount',
+							maxmin: true,
+							shadeClose: true, //点击遮罩关闭层
+							area: ['50%', '35%'],
+							content: '__URL__/editDiscount?code=' + code,
+							end: function() {
+								var table = layui.table;
+								table.reload('idTest');
+							}
+						});
+					} else if(obj.event === 'del') {
+						layer.confirm('Are you sure you want to delete this discount?', 
+						{
+							btn: ['Yes', 'No'],
+							title:false
+						},
+						function(index) {
+							layer.close(index);
+							var code = data.code;
+							$.ajax({
+								type: "post",
+								url: "__URL__/delDiscount",
+								async: true,
+								data: {
+									code: code,
+								},
+								dataType: 'json',
+								success: function(p) {
+									if(p.state == true) {
+										toastr.success(p.info);
+										var table = layui.table;
+										table.reload('idTest');
+									} else {
+										toastr.warning(p.info);
+									}
+								}
+							});
+							//向服务端发送删除指令
+						});
+					} 
+				});
+			});
+
+			function addNewDiscount() {
+				layer.open({
+					type: 2,
+					title: 'Add a new discount',
+					maxmin: true,
+					shadeClose: true, //点击遮罩关闭层
+					area: ['50%', '35%'],
+					content: '__URL__/addDiscount',
+					end: function() {
+						var table = layui.table;
+						table.reload('idTest');
+					}
+				});
+			}
+		</script>
+
+	</body>
+
+</html>

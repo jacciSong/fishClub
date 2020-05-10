@@ -1,0 +1,42 @@
+[ 2020-02-12T20:34:16+08:00 ] 127.0.0.1 /fishClub/index.php/Register//register
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000649s ]
+ERR: 无法加载模块:Register
+
+[ 2020-02-12T20:37:12+08:00 ] 127.0.0.1 /fishClub/index.php/Register//register
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000893s ]
+ERR: 无法加载模块:Register
+
+[ 2020-02-12T20:37:28+08:00 ] 127.0.0.1 /fishClub/Public/css/bootstrap.min.css.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000207s ]
+ERR: 无法加载模块:Public
+
+[ 2020-02-12T20:37:43+08:00 ] 127.0.0.1 /fishClub/Public/css/bootstrap.min.css.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000205s ]
+ERR: 无法加载模块:Public
+
+[ 2020-02-12T20:37:50+08:00 ] 127.0.0.1 /fishClub/Public/css/bootstrap.min.css.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000155s ]
+ERR: 无法加载模块:Public
+
+[ 2020-02-12T20:37:51+08:00 ] 127.0.0.1 /fishClub/Public/css/bootstrap.min.css.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000159s ]
+ERR: 无法加载模块:Public
+
+[ 2020-02-12T20:42:32+08:00 ] 127.0.0.1 /fishClub/Public/css/bootstrap.min.css.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000594s ]
+ERR: 无法加载模块:Public
+

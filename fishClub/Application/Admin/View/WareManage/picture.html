@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<title>Upload Picture</title>
+		<include file='Layout:ins_css' />
+		<link rel="stylesheet" href="__VENDOR__/kindeditor/themes/default/default.css" />
+		<link rel="stylesheet" href="__VENDOR__/kindeditor/plugins/code/prettify.css" />
+		<title></title>
+		<style>
+			.mgT-20{
+				margin-top: 20px;
+			}
+			.btnScale{
+				margin-top: 20px;
+				width: 300px;
+				margin-left: calc(50% - 150px);
+			}
+		</style>
+	</head>
+
+	<body>
+		<form class="layui-form" action="" name="example" method="post" id="pictureForm">
+			<div class="layui-form-item itemheight mgT-20">
+				<label class="layui-form-label">Picture：</label>
+				<div class="layui-input-block">
+					<input type="file" name="file" id="fileimg">
+					<p class="hint">(Only upload files of type jpg, png, jpeg)</p>
+				</div>
+			</div>
+			<input hidden="hidden" name="ware_id" value="{$data.ware_id}"/>
+			<div id="btn-div">
+				<button class="layui-btn save-info btnScale" lay-submit="" lay-filter="save">Save</button>
+			</div>
+		</form>
+		<include file='Layout:ins_js' />
+		<script charset="utf-8" src="__VENDOR__/kindeditor/kindeditor.js"></script>
+		<script charset="utf-8" src="__VENDOR__/kindeditor/lang/zh_CN.js"></script>
+		<script charset="utf-8" src="__VENDOR__/kindeditor/plugins/code/prettify.js"></script>
+		<script type="text/javascript" src="__JS__/base.js"></script>
+		<script type="text/javascript" src="__JS__/jquery.form.min.js"></script>
+		<script type="text/javascript">
+			layui.use(['form', 'layedit', 'laydate', 'upload'], function() {
+				var form = layui.form,
+					$ = layui.jquery,
+					layer = layui.layer,
+					layedit = layui.layedit,
+					laydate = layui.laydate,
+					upload = layui.upload;
+				laydate.render({
+					elem: '#investment_time',
+					format: 'yyyy/MM/dd'
+				});
+				//自定义验证规则
+				form.verify({
+					title: function(value) {
+						if(value == '' || value == null) {
+							return '请输入信息';
+						}
+					},
+				});
+				form.on('submit(save)', function(data) {
+					var formData = $('#pictureForm').serializeArray();
+					var postData = {};
+					$(formData).each(function() {
+						postData[this.name] = this.value;
+					});
+					var ware_id = postData['ware_id'];
+					jquerySubmit2(
+						"__URL__/addPicture?ware_id=" + ware_id,
+						'pictureForm',
+						function(data) {
+							if(data.state) {
+								toastr.success(data.info);
+								var index = parent.layer.getFrameIndex(window.name);
+								parent.layer.close(index);
+							} else {
+								toastr.warning(data.info);
+							}
+						},
+						function(error) {
+							console.log(error);
+						}
+					);
+					return false;
+				});
+			});
+		</script>
+
+	</body>
+
+</html>

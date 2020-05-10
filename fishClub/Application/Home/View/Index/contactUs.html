@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="renderer" content="webkit">
+		<title>FishClub</title>
+		<link rel="shortcut icon" href="favicon.ico">
+		<link href="__CSS__/bootstrap.min.css?v=3.3.6" rel="stylesheet">
+		<link href="__CSS__/font-awesome.min.css?v=4.4.0" rel="stylesheet">
+		<link href="__CSS__/animate.css" rel="stylesheet">
+		<link href="__CSS__/style.css?v=4.1.0" rel="stylesheet">
+		<link rel="stylesheet" href="__VENDOR__/layui/css/layui.css">
+		<style>
+			.gray-bg{
+				background-color: white;
+			}
+			.redFont {
+				color: rgb(192, 40, 28);
+				font-size: 16px;
+				font-weight: bold;
+			}
+			
+			#pageCon1 {
+				font-size: 16px;
+				padding: 0 20px;
+				margin-top: 50px;
+			}
+			.con{
+				display: flex;
+				flex-direction: column;
+				/*align-items: center;*/
+				height: 50px;
+				justify-content: space-between;
+			}
+		</style>
+	</head>
+
+	<body class="gray-bg" id="parent">
+		<div id="wrapper wrapper-content animated fadeInRight" style="overflow-y: scroll;">
+			<div id="pageCon1">
+				<div class="con">
+					<div>
+						<span> Welcome to our shop. if you have any questions, You can email</span>
+						<span class="redFont" style="margin-left: 2px; margin-left: 2px;">{$data.email}</span>
+						<span>, and</span>
+					</div>
+					<span>we will respond as soon as possible. Thank you!</span>
+				</div>
+			</div>
+		</div>
+		<!-- 全局js -->
+		<script src="__JS__/jquery.min.js?v=2.1.4"></script>
+		<script src="__JS__/bootstrap.min.js?v=3.3.6"></script>
+		<script src="__JS__/plugins/metisMenu/jquery.metisMenu.js"></script>
+		<script src="__JS__/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+		<script src="__JS__/plugins/layer/layer.min.js"></script>
+		<!-- 自定义js -->
+		<script type="text/javascript" src="__JS__/hAdmin.js?v=4.1.0"></script>
+		<!--<script type="text/javascript" src="__JS__/index.js"></script>-->
+		<script type="text/javascript" src="__VENDOR__/layui/layui.js"></script>
+		<script type="text/javascript">
+			layui.use(['form', 'layedit', 'laydate'], function() {
+				var form = layui.form,
+					layer = layui.layer,
+					layedit = layui.layedit,
+					laydate = layui.laydate;
+				form.on('submit(Continue)', function(data) {});
+			});
+		</script>
+	</body>
+
+</html>

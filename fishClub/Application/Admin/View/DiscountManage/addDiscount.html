@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<title>Add Discount</title>
+		<include file='Layout:ins_css' />
+		<style>
+			#btn-div {
+				float: right;
+				margin-top: 20px;
+			}
+			
+			.save-info {
+				width: 200px;
+			}
+			
+			.itemheight {
+				margin-bottom: 20px;
+			}
+			
+		</style>
+	</head>
+
+	<body>
+		<div class="wrapper wrapper-content animated fadeInRight">
+			<div class="row">
+				<div class="col-sm-12">
+
+					<form class="layui-form" action="" id="staffForm">
+						<div class="layui-form-item itemheight">
+							<label class="layui-form-label">Code</label>
+							<div class="layui-input-block">
+								<input type="text" id="code" name="code" lay-verify="required" autocomplete="off" class="layui-input" value="{$code}" readonly="readonly">
+							</div>
+						</div>
+						<div class="layui-form-item itemheight">
+							<label class="layui-form-label">Discount</label>
+							<div class="layui-input-block">
+								<input type="text" id="ratio" name="ratio" lay-verify="required" autocomplete="off" class="layui-input">
+							</div>
+						</div>
+						<div id="btn-div">
+							<button class="layui-btn save-info" lay-submit="" lay-filter="register">Save</button>
+						</div>
+					</form>
+
+				</div>
+			</div>
+		</div>
+		<include file='Layout:ins_js' />
+		<script type="text/javascript">
+			layui.use(['form', 'layedit', 'laydate'], function() {
+				var form = layui.form,
+					layer = layui.layer,
+					layedit = layui.layedit,
+					laydate = layui.laydate;
+				//自定义验证规则
+				form.verify({
+					title: function(value) {
+						if(value == '' || value == null) {
+							return 'Please enter information';
+						}
+					},
+				});
+				form.on('submit(register)', function(data) {
+					var formData = $('#staffForm').serializeArray();
+					var postData = {};
+					$(formData).each(function() {
+						postData[this.name] = this.value;
+					}); // * 发起请求
+					$.ajax({
+						data: postData,
+						type: "POST",
+						dataType: "JSON",
+						url: '__URL__/addDiscountInfo',
+						success: function(data) {
+							if(data.state == true) {
+								toastr.success(data.info);
+								var index = parent.layer.getFrameIndex(window.name);
+								parent.layer.close(index);
+							} else {
+								toastr.warning(data.info);
+							}
+						}
+					}); // end ajax
+					return false;
+				});
+			});
+		</script>
+
+	</body>
+
+</html>

@@ -1,0 +1,149 @@
+[ 2020-03-15T18:57:46+08:00 ] 127.0.0.1 /fishClub/index.php/Home/Main/myOrder.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001791s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000608s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000624s ]
+SQL: SHOW COLUMNS FROM `user_base_info` [ RunTime:0.0218s ]
+SQL: SELECT * FROM `user_base_info` WHERE `user_id` = 1 AND `status` = 'normal' LIMIT 1   [ RunTime:0.0035s ]
+SQL: SHOW COLUMNS FROM `ware_base_info` [ RunTime:0.0022s ]
+SQL: SELECT * FROM `ware_base_info` WHERE `status` = 'normal'  [ RunTime:0.0033s ]
+SQL: SHOW COLUMNS FROM `cart_detail_info` [ RunTime:0.0043s ]
+SQL: SELECT * FROM `cart_detail_info` WHERE `cart_id` = 1 AND `status` = 'normal'  [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `order_base_info` [ RunTime:0.0018s ]
+SQL: SELECT a.order_id,a.ware_total,a.discount,a.order_number,a.total,a.real_pay FROM order_base_info as a WHERE a.status = 'obligation' AND a.user_id = '1' ORDER BY a.time desc  [ RunTime:0.0043s ]
+SQL: SHOW COLUMNS FROM `order_ware_detail` [ RunTime:0.0014s ]
+SQL: SELECT a.id,a.price,a.count,b.name,b.picture FROM order_ware_detail as a INNER JOIN ware_base_info as b on a.id = b.ware_id  WHERE a.status = 'normal' AND a.order_id = '5'  [ RunTime:0.0015s ]
+SQL: SELECT a.id,a.price,a.count,b.name,b.picture FROM order_ware_detail as a INNER JOIN ware_base_info as b on a.id = b.ware_id  WHERE a.status = 'normal' AND a.order_id = '2'  [ RunTime:0.0017s ]
+SQL: SELECT a.order_id,a.ware_total,a.discount,a.order_number,a.total,a.real_pay FROM order_base_info as a WHERE a.user_id = '1' AND a.status IN ('payed','completed') ORDER BY a.time desc  [ RunTime:0.0025s ]
+SQL: SELECT a.id,a.price,a.count,b.name,b.picture FROM order_ware_detail as a INNER JOIN ware_base_info as b on a.id = b.ware_id  WHERE a.status = 'normal' AND a.order_id = '4'  [ RunTime:0.0003s ]
+SQL: SELECT a.id,a.price,a.count,b.name,b.picture FROM order_ware_detail as a INNER JOIN ware_base_info as b on a.id = b.ware_id  WHERE a.status = 'normal' AND a.order_id = '1'  [ RunTime:0.0007s ]
+NOTIC: [8] Undefined variable: ifshow /Applications/XAMPP/xamppfiles/htdocs/fishClub/Application/Home/Controller/MainController.class.php 第 189 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000093s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000117s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012900s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012919s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000697s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000709s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000795s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000817s ]
+
+[ 2020-03-15T18:57:50+08:00 ] 127.0.0.1 /fishClub/index.php/Home/Main/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000269s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000266s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000289s ]
+SQL: SHOW COLUMNS FROM `user_base_info` [ RunTime:0.0056s ]
+SQL: SELECT * FROM `user_base_info` WHERE `user_id` = 1 AND `status` = 'normal' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `ware_base_info` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `ware_base_info` WHERE `status` = 'normal'  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `cart_detail_info` [ RunTime:0.0032s ]
+SQL: SELECT * FROM `cart_detail_info` WHERE `cart_id` = 1 AND `status` = 'normal'  [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000080s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000108s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005895s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005923s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000112s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000122s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000370s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000389s ]
+
+[ 2020-03-15T18:57:52+08:00 ] 127.0.0.1 /fishClub/index.php/Home/Main/wareDetail.html?ware_id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000756s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000279s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000831s ]
+SQL: SHOW COLUMNS FROM `user_base_info` [ RunTime:0.0034s ]
+SQL: SELECT * FROM `user_base_info` WHERE `user_id` = 1 AND `status` = 'normal' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `ware_base_info` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `ware_base_info` WHERE `ware_id` = 1 AND `status` = 'normal' LIMIT 1   [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `cart_detail_info` [ RunTime:0.0016s ]
+SQL: SELECT * FROM `cart_detail_info` WHERE `status` = 'normal' AND `ware_id` = 1 AND `cart_id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `cart_detail_info` WHERE `cart_id` = 1 AND `status` = 'normal'  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000116s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000155s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012367s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012393s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000116s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000126s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000350s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000366s ]
+
+[ 2020-03-15T18:57:57+08:00 ] 127.0.0.1 /fishClub/index.php/Home/Main/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000262s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000220s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000249s ]
+SQL: SHOW COLUMNS FROM `user_base_info` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `user_base_info` WHERE `user_id` = 1 AND `status` = 'normal' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `ware_base_info` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `ware_base_info` WHERE `status` = 'normal'  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cart_detail_info` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `cart_detail_info` WHERE `cart_id` = 1 AND `status` = 'normal'  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000063s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000081s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005682s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005696s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000090s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000100s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000920s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000941s ]
+
+[ 2020-03-15T18:57:59+08:00 ] 127.0.0.1 /fishClub/index.php/Home/Main/myOrder.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000282s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000359s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000387s ]
+SQL: SHOW COLUMNS FROM `user_base_info` [ RunTime:0.0022s ]
+SQL: SELECT * FROM `user_base_info` WHERE `user_id` = 1 AND `status` = 'normal' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `ware_base_info` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `ware_base_info` WHERE `status` = 'normal'  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cart_detail_info` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `cart_detail_info` WHERE `cart_id` = 1 AND `status` = 'normal'  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `order_base_info` [ RunTime:0.0012s ]
+SQL: SELECT a.order_id,a.ware_total,a.discount,a.order_number,a.total,a.real_pay FROM order_base_info as a WHERE a.status = 'obligation' AND a.user_id = '1' ORDER BY a.time desc  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `order_ware_detail` [ RunTime:0.0018s ]
+SQL: SELECT a.id,a.price,a.count,b.name,b.picture FROM order_ware_detail as a INNER JOIN ware_base_info as b on a.id = b.ware_id  WHERE a.status = 'normal' AND a.order_id = '5'  [ RunTime:0.0003s ]
+SQL: SELECT a.id,a.price,a.count,b.name,b.picture FROM order_ware_detail as a INNER JOIN ware_base_info as b on a.id = b.ware_id  WHERE a.status = 'normal' AND a.order_id = '2'  [ RunTime:0.0002s ]
+SQL: SELECT a.order_id,a.ware_total,a.discount,a.order_number,a.total,a.real_pay FROM order_base_info as a WHERE a.user_id = '1' AND a.status IN ('payed','completed') ORDER BY a.time desc  [ RunTime:0.0004s ]
+SQL: SELECT a.id,a.price,a.count,b.name,b.picture FROM order_ware_detail as a INNER JOIN ware_base_info as b on a.id = b.ware_id  WHERE a.status = 'normal' AND a.order_id = '4'  [ RunTime:0.0003s ]
+SQL: SELECT a.id,a.price,a.count,b.name,b.picture FROM order_ware_detail as a INNER JOIN ware_base_info as b on a.id = b.ware_id  WHERE a.status = 'normal' AND a.order_id = '1'  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: ifshow /Applications/XAMPP/xamppfiles/htdocs/fishClub/Application/Home/Controller/MainController.class.php 第 189 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000069s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000089s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005132s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005147s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000113s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000140s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000255s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000267s ]
+

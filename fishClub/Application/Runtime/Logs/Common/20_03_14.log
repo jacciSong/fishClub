@@ -1,0 +1,12 @@
+[ 2020-03-14T22:12:52+08:00 ] 127.0.0.1 /fishClub/Uploads/5e5f0e9994728.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000271s ]
+ERR: 无法加载模块:Uploads
+
+[ 2020-03-14T22:34:07+08:00 ] 127.0.0.1 /fishClub/Public/img/favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000199s ]
+ERR: 无法加载模块:Public
+

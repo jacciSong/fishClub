@@ -1,0 +1,6 @@
+[ 2020-03-04T10:11:03+08:00 ] 127.0.0.1 /fishClub/Public/img/favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000271s ]
+ERR: 无法加载模块:Public
+

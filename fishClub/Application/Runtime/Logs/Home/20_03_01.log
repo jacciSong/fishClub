@@ -1,0 +1,50 @@
+[ 2020-03-01T11:24:16+08:00 ] 127.0.0.1 /fishClub/index.php/Home/OrderDetail/adress.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000847s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000395s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000423s ]
+SQL: SHOW COLUMNS FROM `user_address_detail` [ RunTime:0.0019s ]
+SQL: SELECT * FROM `user_address_detail` WHERE `user_id` = 14 AND `status` = 'normal' LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `cart_detail_info` [ RunTime:0.0017s ]
+SQL: SELECT * FROM cart_detail_info as a INNER JOIN ware_base_info as b on a.ware_id = b.ware_id  WHERE a.status = 'normal' AND b.status = 'normal' AND `cart_id` = '14'  [ RunTime:0.0033s ]
+SQL: SELECT a.ware_id,a.count,b.price FROM cart_detail_info as a INNER JOIN ware_base_info as b on a.ware_id = b.ware_id  WHERE a.status = 'normal' AND b.status = 'normal' AND `cart_id` = '14'  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000154s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000190s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009510s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009530s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000104s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000118s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000339s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000357s ]
+
+[ 2020-03-01T11:37:36+08:00 ] 127.0.0.1 /fishClub/index.php/Home/OrderDetail/adress.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000700s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000569s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000591s ]
+SQL: SHOW COLUMNS FROM `user_address_detail` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `user_address_detail` WHERE `user_id` = 14 AND `status` = 'normal' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `cart_detail_info` [ RunTime:0.0016s ]
+SQL: SELECT * FROM cart_detail_info as a INNER JOIN ware_base_info as b on a.ware_id = b.ware_id  WHERE a.status = 'normal' AND b.status = 'normal' AND `cart_id` = '14'  [ RunTime:0.0005s ]
+SQL: SELECT a.ware_id,a.count,b.price FROM cart_detail_info as a INNER JOIN ware_base_info as b on a.ware_id = b.ware_id  WHERE a.status = 'normal' AND b.status = 'normal' AND `cart_id` = '14'  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000166s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000198s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009148s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009174s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000457s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000477s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001386s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001426s ]
+

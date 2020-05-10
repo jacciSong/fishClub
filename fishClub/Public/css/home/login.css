@@ -1,0 +1,101 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+head,
+body {
+	height: 100vh;
+	
+	/*内容会被修剪，并且其余内容是不可见的。*/
+	overflow: hidden;
+}
+
+.top-div {
+	/*弹性布局*/
+	display: flex;
+	height: 1rem;
+	background-color: #ffffff;
+	/*项目在交叉轴上如何对齐*/
+	align-items: center;
+	/*定义了项目在主轴上的对齐方式，默认左对齐*/
+	justify-content: flex-start;
+}
+
+.text {
+	padding-left: .66rem;
+	color: #1d92f4;
+	font-size: .24rem;
+}
+
+.content {
+	/*屏幕分为多个div时,其中一个的高等于固定值减去其他高总和,*/
+	height: calc(100vh - 2.44rem);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	/*背景图像仅显示一次*/
+	background: url(../../img/home/bg-img.png);
+	/*宽高均设为100%*/
+	background-size: 100% 100%;
+}
+
+.login-div {
+	width: 4.6rem;
+	height: 4.56rem;
+	border-radius: .1rem;
+	overflow: hidden;
+	background-color: #FFFFFF;
+}
+
+.user-login-text {
+	font-size: .36rem;
+	color: #1d92f4;
+	text-align: center;
+	margin: .55rem 0;
+}
+
+.input-div {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.input {
+	width: 3.4rem;
+	height: .6rem;
+	outline: none;
+	border: .01rem solid #EEEEEE;
+	border-radius: .06rem;
+	padding-left: .2rem;
+}
+
+.pwd {
+	margin-top: .3rem;
+}
+
+.login-btn {
+	cursor: pointer;
+	cursor: hand;
+	margin-top: .3rem;
+	width: 3.6rem;
+	font-size: .2rem;
+	color: #FFFFFF;
+	background-color: #1d92f4;
+	border-radius: .06rem;
+	height: .6rem;
+	line-height: .6rem;
+	letter-spacing: 5px;
+	text-align: center;
+ 
+}
+
+.bottom {
+	font-size: .2rem;
+	color: #999999;
+	height: 1.44rem;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+}
